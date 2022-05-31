@@ -1,0 +1,22 @@
+p,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  width: 100%;
+}
+
+ul > li > img {
+  border-radius: 50%;
+}
+
+.directory-container {
+  display: flex;
+  flex-wrap: wrap;
+}
