@@ -24,14 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		${customer.location.postcode}`
     ul
       .appendChild(document.createElement('li'))
-      .appendChild(
-        document.createElement('p')
-      ).innerHTML = `DOB: ${customer.dob.date}`
+      .appendChild(document.createElement('p')).innerHTML = `DOB: ${moment
+      .utc(customer.dob.date)
+      .format('MMM DD, YYYY')}`
     ul
       .appendChild(document.createElement('li'))
       .appendChild(
         document.createElement('p')
-      ).innerHTML = `Customer since: ${customer.registered.date}`
+      ).innerHTML = `Customer since: ${moment
+      .utc(customer.registered.date)
+      .format('MMM DD, YYYY')}`
 
     customerContainer.appendChild(ul)
   })
