@@ -12,11 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // full name
     ul
       .appendChild(document.createElement('li'))
-      .appendChild(document.createElement('h2')).innerHTML = `${
-      customer.name.first.charAt(0).toUpperCase() + customer.name.first.slice(1)
-    } ${
-      customer.name.last.charAt(0).toUpperCase() + customer.name.last.slice(1)
-    }`
+      .appendChild(
+        document.createElement('h2')
+      ).innerHTML = `${customer.name.first} ${customer.name.last}`
 
     // email
     ul
